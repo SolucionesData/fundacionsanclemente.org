@@ -130,7 +130,6 @@ h1 {
 	line-height:1.2em;
 	color:#fff;
 	font-weight:normal;
-	background:url(../images/solologo.png) no-repeat 0 0;
 	padding:6px 0 8px 69px;
 	position:absolute;
 	left:39px;
@@ -195,6 +194,7 @@ h3 {
 
 
 /*===== header =====*/
+
 header nav {
 	float:right;
 }
@@ -202,12 +202,15 @@ header nav {
 			float:left;
 		}
 			header nav ul li a {
-				font-size:22px;
+				font-size:19px;
 				color:#fff;
 				height:67px;
 				line-height:67px;
+				font-weight: 900;
 				text-decoration:none;
-				width:101px;
+				width:95px;
+				margin:0 .1em;
+				border-radius:0 0 .5em .5em;
 				text-align:center;
 				float:left;
 				background:#433b8f;
@@ -216,9 +219,21 @@ header nav {
 				background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #383282),color-stop(1, #484095)); /* Saf4+, Chrome */
         filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#383282', EndColorStr='#484095'); /* IE6,IE7 */
         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#383282', EndColorStr='#484095')"; /* IE8 */
+			position: relative;
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			-ms-transition: all .5s;
+			-o-transition: all .5s;
+			transition: all .5s;
+			
 		}
-		header nav ul li a.current, header nav ul li a:hover {
-			padding-bottom:5px;
+		header nav ul li a.current, header nav ul li:hover a{
+			border-radius:.5em .5em 0 0;
+			padding-bottom:20px;
+			line-height: 40px;
+
+			top: 70px;
+
 		}
 		
 		header nav ul li:nth-of-type(2) a {
@@ -257,7 +272,19 @@ header nav {
 			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#d00110', EndColorStr='#da0116')"; /* IE8 */
 		}
 
-
+header h1{
+	width: 300px;
+}
+header h1 span{
+	display: block;
+}
+header figure{
+	position: absolute;
+	width: 100px;
+}
+header figure img{
+	width: 100%;
+}
 
 
 /*===== gallery =====*/
