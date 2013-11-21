@@ -14,6 +14,29 @@
 	<script type="text/javascript" src="js/roundabout.js"></script>
   <script type="text/javascript" src="js/roundabout_shapes.js"></script>
   <script type="text/javascript" src="js/gallery_init.js"></script>
+
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/gmaps.js"></script>
+  <script type="text/javascript">
+    var map;
+    $(document).ready(function(){
+      map = new GMaps({
+        el: '#map',
+        lat: -25.324079,
+        lng: -57.632969
+      });
+      map.addMarker({
+        lat: -25.324079,
+        lng: -57.632969,
+        title: 'Fundacion San Clemente',
+        infoWindow: {
+          content: '<p>Estamos aquí visítanos</p>'
+        }
+      });
+    });
+  </script>
   <!--[if lt IE 7]>
   	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
   <![endif]-->
@@ -27,7 +50,7 @@
   <!-- header -->
   <header>
     <div class="container">
-    	<h1><a href="index.html">Fund. San Clemente</a></h1>
+    	<figure><img src="images/logo.gif" alt=""></figure>
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -41,7 +64,7 @@
     </div>
 	</header>
   <!-- #gallery -->
-  <section id="gallery">
+  <!-- <section id="gallery">
   	<div class="container">
     	<ul id="myRoundabout">
       	<li><img src="images/slide3.jpg" alt=""></li>
@@ -51,7 +74,7 @@
         <li><img src="images/slide4.jpg" alt=""></li>
       </ul>
   	</div>
-  </section>
+  </section> -->
   <!-- /#gallery -->
   <div class="main-box">
     <div class="container">
@@ -59,7 +82,7 @@
         <div class="wrapper">
         	<!-- aside -->
           <aside>
-            <h2>Nuestros <span>Contactos</span></h2>
+            <h2>Contacte con <span>Nosotros</span></h2>
             <!-- .contacts -->
             <ul class="contacts">
               <li><strong>País:</strong>PARAGUAY</li>
@@ -67,11 +90,10 @@
               <li><strong>Barrio:</strong>Remanso</li>
               <li><strong>Dirección:</strong>Avda. Los Pescadores c/ Brasilia.</li>
               <li><strong>Teléfono:</strong>+595 21 760 353 </li>
-              <li><strong>Email:</strong><a href="#">info@fundacionsanclemente.org</a></li>
+              <li><strong>Correo:</strong><a href="#">info@fundacionsanclemente.org</a></li>
             </ul>
             <!-- /.contacts -->
-            <h3>Miscellaneous info:</h3>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+            <div id="map">jasdojfa</div>
           </aside>
           <!-- content -->
           <section id="content">
@@ -108,8 +130,13 @@
   <footer>
     <div class="container">
     	<div class="wrapper">
-        <div class="fleft">&copy; 2013 - FUNDACION SAN CLEMENTE</div>
-        <div class="fright">Sitio web creado por <a href="http://www.solucionesdata.net/" target="_blank" rel="nofollow">www.solucionesdata.net</a></div>
+        <div class="fleft">&copy; 2013 FUNDACION SAN CLEMENTE - Todos los derechos reservados.</div>
+        <div class="fright">Seguinos en</div>
+        <br />
+        <div class="fleft">Avda. Los Pescadores c/ Brasilia - Mariano R. Alonso</div>
+        <div class="fright"><a href="#" title="Facebook" target="_blank"><img src="images/facebook.png" alt=""/></a>&nbsp<a href="#" title="Twitter" target="_blank"><img src="images/twitter.png" alt=""/></a></div>
+        <br />
+        <div class="fleft">Tel.: +595 21 760 353 // Correo: <a href="mailto:info@fundacionsanclemente.org">info@fundacionsanclemente.org</a></div>
       </div>
     </div>
   </footer>
