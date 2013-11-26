@@ -338,7 +338,7 @@ header nav {
 
 /*--- news list styles ---*/
 	.news li {
-		overflow:hidden;
+		
 		position:relative;
 		padding:0 0 26px 84px;
 	}
