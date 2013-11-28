@@ -203,6 +203,11 @@ header nav {
 }
 		header nav ul li {
 			float:left;
+			-webkit-transition: all .5s lineal;
+			-moz-transition: all .5s lineal;
+			-ms-transition: all .5s lineal;
+			-o-transition: all .5s lineal;
+			transition: all .5s lineal;
 		}
 			header nav ul li a {
 				font-size:20px;
@@ -223,18 +228,18 @@ header nav {
         filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#00529E', EndColorStr='#00529E'); /* IE6,IE7 */
         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#00529E', EndColorStr='#00529E')"; /* IE8 */
 			position: relative;
-			-webkit-transition: all .3s;
-			-moz-transition: all .3s;
-			-ms-transition: all .3s;
-			-o-transition: all .3s;
-			transition: all .3s;
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			-ms-transition: all .5s;
+			-o-transition: all .5s;
+			transition: all .5s;
 			
 		}
 		header nav ul li a.current, header nav ul li:hover a{
 			border-radius:.5em .5em 0 0;
 			padding-bottom:20px;
 			line-height: 40px;
-			top: 40px;
+			margin-top: 40px;
 
 		}
 		
@@ -312,7 +317,23 @@ header nav {
 	 border:3px solid rgba(0, 0, 0, 0.08);
 	 overflow: hidden;
 	 border-radius: 2.5em;
+	}
+.roundabout-moveable-item:nth-child(1){
+	border: red solid 6px; 
 }
+.roundabout-moveable-item:nth-child(2){
+	border: green solid 6px; 
+}
+.roundabout-moveable-item:nth-child(3){
+	border: blue solid 6px; 
+}
+.roundabout-moveable-item:nth-child(4){
+	border: purple solid 6px; 
+}
+.roundabout-moveable-item:nth-child(5){
+	border: yellow solid 6px; 
+}
+
 	.roundabout-moveable-item img{
 		width:100%;
 	}
@@ -382,7 +403,10 @@ header nav {
 
 
 
-
+.team-lista{
+	overflow-y:scroll; 
+	height: 430px;
+}
 .team-list li {
 	width:100%;
 	overflow:hidden;
@@ -495,7 +519,11 @@ footer {
 
 /*==========================================*/
 
-
+video{
+	width: 100%;
+	border-radius: 15px;
+	display: block;
+}
 /*================= MAPA ===================*/
 #map{
 	width: 100%;
@@ -504,3 +532,49 @@ footer {
 }
 
 /*==========================================*/
+.dona{
+	background: orange;
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+	line-height: 80px;
+	margin: 15px 0;
+	float: left;
+	text-align: center;
+}
+.dona:nth-child(2n+1){
+	float: right;
+	background: red;
+}
+.dona a{
+	color:#fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.boton{
+	display: block;
+	width: 120px;
+	margin: 15px auto;
+	background: #cde;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	border-radius: 5px;
+}
+.boton:hover{
+	background: #edc;
+}
+.objetivos{
+	list-style: decimal;
+	text-align: center;
+	height: 340px;
+	overflow-y: scroll; 
+}

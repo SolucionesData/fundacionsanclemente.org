@@ -5,15 +5,20 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
   <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/jscrollpane.css" type="text/css" media="all">
+  
   <link rel="shortcut icon" href="images/favicon.ico">
-  <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/cufon-yui.js"></script>
   <script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
   <script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
   <script type="text/javascript" src="js/cufon-replace.js"></script>
-	<script type="text/javascript" src="js/roundabout.js"></script>
-  <script type="text/javascript" src="js/roundabout_shapes.js"></script>
   <script type="text/javascript" src="js/gallery_init.js"></script>
+  <script type="text/javascript" src="js/roundabout.js"></script>
+  <script type="text/javascript" src="js/roundabout_shapes.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
   <!--[if lt IE 7]>
   	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
   <![endif]-->
@@ -21,6 +26,12 @@
   	<script type="text/javascript" src="js/html5.js"></script>
     <script type="text/javascript" src="js/IE9.js"></script>
   <![endif]-->
+  <script>
+  $(function()
+{
+  $('.objetivos').jScrollPane();
+});
+  </script>
 </head>
 
 <body>
@@ -43,14 +54,29 @@
   <div class="main-box">
     <div class="container">
       <div class="inside">
+         <div class="wrapper">
         <h2>Son objetivos de la <span>Fundación</span></h2>
-        <ol class="list1">
-        	<li><a>Posibilitar la realización de los Cursillos de Cristiandad. MCC DE COLORES</a></li>
-          <div class="centrarlista" style="width:600px; height:232x;">
-            <img src="images/1-1.jpg" style="float:left;"/>  
-            <img src="images/1-2.jpg" style="float:right;"/>
-          </div>
-        </ol> 
+        <div class="objetivos">
+          <li><a>Posibilitar la realización de los Cursillos de Cristiandad. MCC DE COLORES</a>
+          <figure>
+            <img src="images/1-1.jpg">  
+            <img src="images/1-2.jpg">
+          </figure>
+          </li>
+          <li><a>Posibilitar la realización de los Cursillos de Cristiandad. MCC DE COLORES</a>
+          <figure>
+            <img src="images/1-1.jpg">  
+            <img src="images/1-2.jpg">
+          </figure>
+          </li>
+          <li><a>Posibilitar la realización de los Cursillos de Cristiandad. MCC DE COLORES</a>
+          <figure>
+            <img src="images/1-1.jpg">  
+            <img src="images/1-2.jpg">
+          </figure>
+          </li>
+        </div> 
+      </div>
       </div>
     </div>
   </div>
