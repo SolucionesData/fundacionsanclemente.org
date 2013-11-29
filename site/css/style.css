@@ -29,14 +29,14 @@ html, body { height:100%;}
 	header{
 		height:120px;
 		overflow:hidden;
-		background: #eee;
+		background: #fff;
 	}
 	
 	/*Gallery*/
 	#gallery {
 		height:496px;
 		overflow:hidden;
-		background: #fff;
+		background: #eee;
 	}
 	
 	/* Content */
@@ -166,7 +166,7 @@ h3 {
 /*==================boxes====================*/
 .main-box {
 	/* border-top:5px solid #eee;  Borde encima del Content */
-	background:#fff;
+	background:#eee;
 	width:100%;
 	min-height: 520px;
 }
