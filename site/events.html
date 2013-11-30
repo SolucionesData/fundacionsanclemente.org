@@ -13,17 +13,19 @@
   <script type="text/javascript" src="js/cufon-replace.js"></script>
 	<script type="text/javascript" src="js/roundabout.js"></script>
   <script type="text/javascript" src="js/roundabout_shapes.js"></script>
-  <script type="text/javascript" src="js/gallery_init.js"></script>
-  <script type="text/javascript" src="js/loopedslider.min.js"></script>
-  <script type="text/javascript">
-		$(function(){
-			// Option set as a global variable
-			$('#loopedSlider').loopedSlider({
-				container: ".wrap",
-				containerClick: false
-			});
-		});
-	</script>
+  <script src="../jquery.colorbox.js"></script>
+    <script>
+      $(document).ready(function(){
+        //Examples of how to assign the Colorbox event to elements
+        $(".group4").colorbox({rel:'group4', slideshow:true});
+        
+        //Example of preserving a JavaScript event for inline calls.
+        $("#click").click(function(){ 
+          $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+          return false;
+        });
+      });
+    </script>
   <!--[if lt IE 7]>
   	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
   <![endif]-->
@@ -37,66 +39,62 @@
   <!-- header -->
   <header>
     <div class="container">
-    	<h1><a href="index.html">Fund. San Clemente</a></h1>
+    	<figure><img src="images/logo.gif" alt=""></figure>
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="about.html">Nosotros</a></li>
           <li><a href="objetives.html">Objetivos</a></li>
-          <li><a href="events.html" class="current">Eventos</a></li>
+          <li><a href="events.html" class="current">Galeria</a></li>
           <li><a href="news.html">Novedades</a></li>
           <li><a href="contacts.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
 	</header>
-  <!-- #gallery -->
-  <section id="gallery">
-  	<div class="container">
-    	<ul id="myRoundabout">
-      	<li><img src="images/slide3.jpg" alt=""></li>
-        <li><img src="images/slide2.jpg" alt=""></li>
-        <li><img src="images/slide5.jpg" alt=""></li>
-        <li><img src="images/slide1.jpg" alt=""></li>
-        <li><img src="images/slide4.jpg" alt=""></li>
-      </ul>
-  	</div>
-  </section>
-  <!-- /#gallery -->
+  
   <div class="main-box">
     <div class="container">
       <div class="inside">
         <div class="wrapper">
         	<!-- aside -->
-          <aside>
-            <h2>Template <span>Subpages</span></h2>
-            <!-- loopedSlider begin -->
-            <div id="loopedSlider">	
-              <div class="wrap">
-                <div class="slides">
-                  <div><a href="#"><img src="images/thumb3.jpg" alt=""></a></div>
-                  <div><a href="#"><img src="images/thumb2.jpg" alt=""></a></div>
-                  <div><a href="#"><img src="images/thumb5.jpg" alt=""></a></div>
-                  <div><a href="#"><img src="images/thumb1.jpg" alt=""></a></div>
-                  <div><a href="#"><img src="images/thumb4.jpg" alt=""></a></div>
-                </div>
+            <h2>Eventos y <span>Campañas</span></h2>
+          <aside class="event">
+            <div class="wrapper">
+              <div class="album">
+                <h2><a href="#">Fotos de la Casa</a></h2>
               </div>
-              <ul class="nav-controls">
-              	<li><a href="#" class="previous">Previous Page</a></li>
-              	<li><a href="#" class="next">Next Page</a></li>
-              </ul>
+              <div class="album">
+                <h2><a href="#">Jornada Familiar</a></h2>
+                <a href="img"></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+              <div class="album">
+                <h2><a href="#">Feria ONG's</a></h2>
+              </div>
+              <div class="album">
+                <h2><a href="#">Feria Shopping del sol</a></h2>
+              </div>
+              <div class="album">
+                <h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
+              </div>
+              <div class="album">
+                <h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
+              </div>
+              <div class="album">
+                <h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
+              </div>
+              <div class="album">
+                <h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
+              </div>
+              <div class="album">
+                <h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
+              </div>
             </div>
-            <!-- loopedSlider end -->
           </aside>
-          <!-- content -->
-          <section id="content">
-            <article>
-            	<h2>About <span>Template</span></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudansam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea tium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-            </article> 
-          </section>
         </div>
       </div>
     </div>
@@ -105,8 +103,13 @@
   <footer>
     <div class="container">
     	<div class="wrapper">
-        <div class="fleft">&copy; 2013 - Fundación San Clemente</div>
-        <div class="fright">Website designed by <a href="http://www.solucionesdata.net/" target="_blank" rel="nofollow">www.solucionesdata.net</a></div>
+        <div class="fleft">&copy; 2013 FUNDACION SAN CLEMENTE - Todos los derechos reservados.</div>
+        <div class="fright">Seguinos en</div>
+        <br />
+        <div class="fleft">Avda. Los Pescadores c/ Brasilia - Mariano R. Alonso</div>
+        <div class="fright"><a href="#" title="Facebook" target="_blank"><img src="images/facebook.png" alt=""/></a>&nbsp<a href="#" title="Twitter" target="_blank"><img src="images/twitter.png" alt=""/></a></div>
+        <br />
+        <div class="fleft">Tel.: +595 21 760 353 // Correo: <a href="mailto:info@fundacionsanclemente.org">info@fundacionsanclemente.org</a></div>
       </div>
     </div>
   </footer>

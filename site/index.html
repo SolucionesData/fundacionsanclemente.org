@@ -5,35 +5,46 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
   <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/jscrollpane.css" type="text/css" media="all">
+
   <link rel="shortcut icon" href="images/favicon.ico">
-  <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/cufon-yui.js"></script>
   <script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
   <script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
-	<script type="text/javascript" src="js/roundabout.js"></script>
+  <script type="text/javascript" src="js/roundabout.js"></script>
   <script type="text/javascript" src="js/roundabout_shapes.js"></script>
   <script type="text/javascript" src="js/gallery_init.js"></script>
   <script type="text/javascript" src="js/cufon-replace.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
   <!--[if lt IE 7]>
-  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
   <![endif]-->
   <!--[if lt IE 9]>
-  	<script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/html5.js"></script>
     <script type="text/javascript" src="js/IE9.js"></script>
   <![endif]-->
+  <script>
+  $(function()
+{
+  $('.scroll').jScrollPane();
+});
+  </script>
 </head>
 
 <body>
   <!-- header -->
   <header>
     <div class="container">
-    	<h1><a href="index.html">Fund. San Clemente</a></h1>
+    	<figure><img src="images/logo.gif" alt=""></figure>
       <nav>
         <ul>
         	<li><a href="index.html" class="current">Inicio</a></li>
           <li><a href="about.html">Nosotros</a></li>
           <li><a href="objetives.html">Objetivos</a></li>
-          <li><a href="events.html">Eventos</a></li>
+          <li><a href="events.html">Galeria</a></li>
           <li><a href="news.html">Novedades</a></li>
           <li><a href="contacts.html">Contacto</a></li>
         </ul>
@@ -45,11 +56,11 @@
   <section id="gallery">
   	<div class="container">
     	<ul id="myRoundabout">
-      	<li><img src="images/slide3.jpg" alt=""></li>
-        <li><img src="images/slide2.jpg" alt=""></li>
-        <li><img src="images/slide5.jpg" alt=""></li>
-        <li><img src="images/slide1.jpg" alt=""></li>
-        <li><img src="images/slide4.jpg" alt=""></li>
+      	<li><img src="images/image-01.jpg" alt=""></li>
+        <li><img src="images/image-02.jpg" alt=""></li>
+        <li><img src="images/image-03.jpg" alt=""></li>
+        <li><img src="images/image-04.jpg" alt=""></li>
+        <li><img src="images/image-05.jpg" alt=""></li>
       </ul>
   	</div>
   </section>
@@ -60,40 +71,66 @@
         <div class="wrapper">
         	<!-- aside -->
           <aside>
-            <h2>Noticias <span>Recientes</span></h2>
+            <h2>Calendario <span>2013</span></h2>
             <!-- .news -->
-            <ul class="news">
-            	<li>
-              	<figure><strong>22</strong>Junio</figure>
-                <h3><a href="#">Sed ut perspiciatis unde</a></h3>
-                Domnis iste natus error sit voluptam accusa doloremque <a href="#">...</a>
-              </li>
-              <li>
-              	<figure><strong>09</strong>Junio</figure>
-                <h3><a href="#">Totam rem aperiam</a></h3>
-                Eaqueipsa quae abillo inventoretis et quasi architecto beatae <a href="#">...</a>
-              </li>
-              <li>
-              	<figure><strong>31</strong>Mayo</figure>
-                <h3><a href="#">Inventore veritatis et quasi</a></h3>
-                Architecto beatae vitae dicta sunt explicabo <a href="#">...</a>
-              </li>
-              <li>
-              	<figure><strong>25</strong>Mayo</figure>
-                <h3><a href="#">Nemo enim ipsam</a></h3>
-                Voluptatem quia voluptas sit asper natur aut odit aut fugit <a href="#">...</a>
-              </li>
-            </ul>
+            <div class="scroll">
+              <ul class="news">
+              	<li>
+                	<figure><strong>31</strong>Noviembre</figure>
+                  <h3><a href="#">Retiro uno</a></h3>
+                  descripcion, organiza <a href="#">...</a>
+                </li>
+                <li>
+                	<figure><strong>01</strong>Noviembre</figure>
+                  <h3><a href="#">Retiro dos</a></h3>
+                  descripcion, organiza <a href="#">...</a>
+                </li>
+                <li>
+                	<figure><strong>31</strong>Diciembre</figure>
+                  <h3><a href="#">Retiro tres</a></h3>
+                  descripcion, organiza <a href="#">...</a>
+                </li>
+                <li>
+                  <figure><strong>25</strong>Diciembre</figure>
+                  <h3><a href="#">Retiro cuatro</a></h3>
+                  descripcion, organiza<a href="#">...</a>
+                </li>
+                <li>
+                  <figure><strong>25</strong>Diciembre</figure>
+                  <h3><a href="#">Retiro cinco</a></h3>
+                  descripcion, organiza<a href="#">...</a>
+                </li>
+                <li>
+                  <figure><strong>25</strong>Diciembre</figure>
+                  <h3><a href="#">Retiro seis</a></h3>
+                  descripcion, organiza
+                <li>
+                  <figure><strong>25</strong>Diciembre</figure>
+                  <h3><a href="#">Retiro siete</a></h3>
+                  descripcion, organiza
+                <li>
+                	<figure><strong>25</strong>Diciembre</figure>
+                  <h3><a href="#">Retiro ocho</a></h3>
+                  descripcion, organiza<a href="#">...</a>
+                </li>
+              </ul>
+            </div>
             <!-- /.news -->
           </aside>
           <!-- content -->
           <section id="content">
             <article>
             	<h2>Bienvenidos a la <span>Fundación San Clemente</span></h2>
-              <p>Design Company is a free web template created by TemplateMonster.com team. This website template is optimized for 1024X768 screen resolution. It is also HTML5 &amp; CSS3 valid.</p>
-              <figure><a href="#"><img src="images/banner1.jpg" alt=""></a></figure>
-              <p>This website template has several pages: <a href="index.html">Home</a>, <a href="about.html">About us</a>, <a href="privacy.html">Privacy Policy</a>, <a href="gallery.html">Gallery</a>, <a href="contacts.html">Contact us</a> (note that contact us form – doesn’t work), <a href="sitemap">Site Map</a>.</p>
-              This website template can be delivered in two packages - with PSD source files included and without them. If you need PSD source files, please go to the template download page at TemplateMonster to leave the e-mail address that you want the template ZIP package to be delivered to.
+              <video controls>
+                <source src="video/video2.mp4" type="video/mp4">
+                <source src="video/video2.ogg" type="video/ogg">
+                <source src="video/video2.webm" type="video/webm">
+                <object data="video/video2.mp4">
+                  <embed src="video/video2.swf">
+                </object>
+              </video> 
+              <div class="dona"><a href="#">Donación</a></div>
+              <div class="dona"><a href="#">Apadriná</a></div>
             </article> 
           </section>
         </div>
@@ -104,8 +141,13 @@
   <footer>
     <div class="container">
     	<div class="wrapper">
-        <div class="fleft">&copy; 2013 - Fundación San Clemente</div>
-        <div class="fright">Website designed by <a href="http://www.solucionesdata.net/" target="_blank" rel="nofollow">www.solucionesdata.net</a></div>
+        <div class="fleft">&copy; 2013 FUNDACION SAN CLEMENTE - Todos los derechos reservados.</div>
+        <div class="fright">Seguinos en</div>
+        <br />
+        <div class="fleft">Avda. Los Pescadores c/ Brasilia - Mariano R. Alonso</div>
+        <div class="fright"><a href="#" title="Facebook" target="_blank"><img src="images/facebook.png" alt=""/></a>&nbsp<a href="#" title="Twitter" target="_blank"><img src="images/twitter.png" alt=""/></a></div>
+        <br />
+        <div class="fleft">Tel.: +595 21 760 353 // Correo: <a href="mailto:info@fundacionsanclemente.org">info@fundacionsanclemente.org</a></div>
       </div>
     </div>
   </footer>

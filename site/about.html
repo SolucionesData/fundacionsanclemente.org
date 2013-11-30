@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
   <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/jscrollpane.css" type="text/css" media="all">
+  
   <link rel="shortcut icon" href="images/favicon.ico">
-  <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/cufon-yui.js"></script>
   <script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
   <script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
@@ -14,6 +17,8 @@
 	<script type="text/javascript" src="js/roundabout.js"></script>
   <script type="text/javascript" src="js/roundabout_shapes.js"></script>
   <script type="text/javascript" src="js/gallery_init.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
   <!--[if lt IE 7]>
   	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
   <![endif]-->
@@ -21,19 +26,25 @@
   	<script type="text/javascript" src="js/html5.js"></script>
     <script type="text/javascript" src="js/IE9.js"></script>
   <![endif]-->
+  <script>
+  $(function()
+{
+  $('.team-lista').jScrollPane();
+});
+  </script>
 </head>
 
 <body>
   <!-- header -->
   <header>
     <div class="container">
-    	<h1><a href="index.html">Fund. San Clemente</a></h1>
+    	<figure><img src="images/logo.gif" alt=""></figure>
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="about.html" class="current">Nosotros</a></li>
           <li><a href="objetives.html">Objetivos</a></li>
-          <li><a href="events.html">Eventos</a></li>
+          <li><a href="events.html">Galeria</a></li>
           <li><a href="news.html">Novedades</a></li>
           <li><a href="contacts.html">Contacto</a></li>
         </ul>
@@ -41,7 +52,7 @@
     </div>
 	</header>
   <!-- #gallery -->
-  <section id="gallery">
+  <!-- <section id="gallery">
   	<div class="container">
     	<ul id="myRoundabout">
       	<li><img src="images/slide3.jpg" alt=""></li>
@@ -51,7 +62,7 @@
         <li><img src="images/slide4.jpg" alt=""></li>
       </ul>
   	</div>
-  </section>
+  </section> -->
   <!-- /#gallery -->
   <div class="main-box">
     <div class="container">
@@ -65,27 +76,58 @@
               La Fundación nace en el Movimiento de Cursillos de la Cristiandad, en Asunción. Adquiere su personería jurídica en 1981.
             </div>
             <p>Desde entonces posee la Casa de Retiros San Clemente (a la memoria del Padre Clemente Mc. Millan, sacerdote redentorista, que propicio la realización de los primeros Cursillos en el Paraguay, hace más de 40 años) en donde se realizan además de los Cursillos de Cristiandad de la Arquidiócesis y San Lorenzo, numerosos retiros, jornadas, encuentros, seminarios y conferencias, además de celebraciones religiosas de la Iglesia Católica y actividades sociales y recreativas de la comunidad cristina.</p>
+            <a href="#" class="boton"> ver mas</a>
           </aside>
           <!-- content -->
           <section id="content">
-            <article>
+            <article class="team-lista">
             	<h2>Nuestro <span>Staff</span></h2>
               <!-- .team-list -->
               <ul class="team-list">
               	<li>
-                	<figure><img src="images/img2.jpg" alt=""></figure>
-                  <h3><a href="#">Presidente</a> - Ing. Ricardo Barrios</h3>
-                  He is the most important member of your team. Usually this is the person who started the website. Maybe it is worth to write why he has made such a decision and what has inspired him <a href="#">...</a>
+                	<figure><img src="images/img2.png" alt=""></figure>
+                  <h3><a href="#">Presidenta</a> - Flora Paniagua</h3>
+                  Él es el miembro más importante de su equipo. Por lo general, esta es la persona que inició la Fundación.<a href="#">...</a>
                 </li>
                 <li>
-                	<figure><img src="images/img3.jpg" alt=""></figure>
-                  <h3><a href="#">Vice Presidente</a> - Dra. Flora Paniagua</h3>
-                  We are completly lost on what he's responsible for, but we hope that you know it. We also hope that you will tell it to the rest of the world including us by placing some real text here <a href="#">...</a>
+                	<figure><img src="images/img2.png" alt=""></figure>
+                  <h3><a href="#">Vice Presidente</a> - Jorge Paredes</h3>
+                  Estamos completamente perdidos en lo que él es responsable de, pero esperamos que usted lo sepa. También esperamos que usted le dirá al resto del mundo, incluidos nosotros. <a href="#">...</a>
                 </li>
                 <li>
-                	<figure><img src="images/img4.jpg" alt=""></figure>
-                  <h3><a href="#">Secretario</a> - Sr. Alberto Brisco</h3>
-                  We are completly lost on what he's responsible for, but we hope that you know it. We also hope that you will tell it to the rest of the world including us by placing some real text here <a href="#">...</a>
+                  <figure><img src="images/img2.png" alt=""></figure>
+                  <h3><a href="#">Secretaria</a> - Diana Barrios de Busto</h3>
+                  Estamos completamente perdidos en lo que él es responsable de, pero esperamos que usted lo sepa. También esperamos que usted le dirá al resto del mundo, incluidos nosotros. <a href="#">...</a>
+                </li>
+                <li>
+                  <figure><img src="images/img2.png" alt=""></figure>
+                  <h3><a href="#">Secretaria</a> - Diana Barrios de Busto</h3>
+                  Estamos completamente perdidos en lo que él es responsable de, pero esperamos que usted lo sepa. También esperamos que usted le dirá al resto del mundo, incluidos nosotros. <a href="#">...</a>
+                </li>
+                <li>
+                  <figure><img src="images/img2.png" alt=""></figure>
+                  <h3><a href="#">Secretaria</a> - Diana Barrios de Busto</h3>
+                  Estamos completamente perdidos en lo que él es responsable de, pero esperamos que usted lo sepa. También esperamos que usted le dirá al resto del mundo, incluidos nosotros. <a href="#">...</a>
+                </li>
+                <li>
+                  <figure><img src="images/img2.png" alt=""></figure>
+                  <h3><a href="#">Secretaria</a> - Diana Barrios de Busto</h3>
+                  Estamos completamente perdidos en lo que él es responsable de, pero esperamos que usted lo sepa. También esperamos que usted le dirá al resto del mundo, incluidos nosotros. <a href="#">...</a>
+                </li>
+                <li>
+                  <figure><img src="images/img2.png" alt=""></figure>
+                  <h3><a href="#">Secretaria</a> - Diana Barrios de Busto</h3>
+                  Estamos completamente perdidos en lo que él es responsable de, pero esperamos que usted lo sepa. También esperamos que usted le dirá al resto del mundo, incluidos nosotros. <a href="#">...</a>
+                </li>
+                <li>
+                  <figure><img src="images/img2.png" alt=""></figure>
+                  <h3><a href="#">Secretaria</a> - Diana Barrios de Busto</h3>
+                  Estamos completamente perdidos en lo que él es responsable de, pero esperamos que usted lo sepa. También esperamos que usted le dirá al resto del mundo, incluidos nosotros. <a href="#">...</a>
+                </li>
+                <li>
+                	<figure><img src="images/img2.png" alt=""></figure>
+                  <h3><a href="#">Secretaria</a> - Diana Barrios de Busto</h3>
+                  Estamos completamente perdidos en lo que él es responsable de, pero esperamos que usted lo sepa. También esperamos que usted le dirá al resto del mundo, incluidos nosotros. <a href="#">...</a>
                 </li>
               </ul>
               <!-- /.team-list -->
@@ -99,8 +141,13 @@
   <footer>
     <div class="container">
     	<div class="wrapper">
-        <div class="fleft">&copy; 2013 - Fundación San Clemente</div>
-        <div class="fright">Website designed by <a href="http://www.solucionesdata.net/" target="_blank" rel="nofollow">www.solucionesdata.net</a></div>
+        <div class="fleft">&copy; 2013 FUNDACION SAN CLEMENTE - Todos los derechos reservados.</div>
+        <div class="fright">Seguinos en</div>
+        <br />
+        <div class="fleft">Avda. Los Pescadores c/ Brasilia - Mariano R. Alonso</div>
+        <div class="fright"><a href="#" title="Facebook" target="_blank"><img src="images/facebook.png" alt=""/></a>&nbsp<a href="#" title="Twitter" target="_blank"><img src="images/twitter.png" alt=""/></a></div>
+        <br />
+        <div class="fleft">Tel.: +595 21 760 353 // Correo: <a href="mailto:info@fundacionsanclemente.org">info@fundacionsanclemente.org</a></div>
       </div>
     </div>
   </footer>

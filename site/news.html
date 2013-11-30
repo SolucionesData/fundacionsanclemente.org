@@ -5,15 +5,20 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
   <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/custom_2.css" type="text/css" media="all">
   <link rel="shortcut icon" href="images/favicon.ico">
-  <script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+
+  
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/cufon-yui.js"></script>
   <script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
   <script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
   <script type="text/javascript" src="js/cufon-replace.js"></script>
-	<script type="text/javascript" src="js/roundabout.js"></script>
-  <script type="text/javascript" src="js/roundabout_shapes.js"></script>
   <script type="text/javascript" src="js/gallery_init.js"></script>
+  <script type="text/javascript" src="js/roundabout.js"></script>
+  <script type="text/javascript" src="js/roundabout_shapes.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
   <!--[if lt IE 7]>
   	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
   <![endif]-->
@@ -21,19 +26,21 @@
   	<script type="text/javascript" src="js/html5.js"></script>
     <script type="text/javascript" src="js/IE9.js"></script>
   <![endif]-->
+
+    <script src="js/modernizr.custom.63321.js"></script>
 </head>
 
 <body>
   <!-- header -->
   <header>
     <div class="container">
-    	<h1><a href="index.html">Fund. San Clemente</a></h1>
+    	<figure><img src="images/logo.gif" alt=""></figure>
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="about.html">Nosotros</a></li>
           <li><a href="objetives.html">Objetivos</a></li>
-          <li><a href="events.html">Eventos</a></li>
+          <li><a href="events.html">Galeria</a></li>
           <li><a href="news.html" class="current">Novedades</a></li>
           <li><a href="contacts.html">Contacto</a></li>
         </ul>
@@ -41,7 +48,7 @@
     </div>
 	</header>
   <!-- #gallery -->
-  <section id="gallery">
+  <!-- <section id="gallery">
   	<div class="container">
     	<ul id="myRoundabout">
       	<li><img src="images/slide3.jpg" alt=""></li>
@@ -50,16 +57,27 @@
         <li><img src="images/slide1.jpg" alt=""></li>
         <li><img src="images/slide4.jpg" alt=""></li>
       </ul>
-  	</div>
+  	</div> -->
   </section>
   <!-- /#gallery -->
   <div class="main-box">
     <div class="container">
       <div class="inside">
-        <h2>Privacy <span>Policy</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+        
+        <div class="custom-calendar-wrap">
+          <div id="custom-inner" class="custom-inner">
+            <div class="custom-header clearfix">
+              <nav>
+                <span id="custom-prev" class="custom-prev"></span>
+                <span id="custom-next" class="custom-next"></span>
+              </nav>
+              <h2 id="custom-month" class="custom-month"></h2>
+              <h3 id="custom-year" class="custom-year"></h3>
+            </div>
+            <div id="calendar" class="fc-calendar-container"></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -67,11 +85,87 @@
   <footer>
     <div class="container">
     	<div class="wrapper">
-        <div class="fleft">&copy; 2013 - Fundación San Clemente</div>
-        <div class="fright">Website designed by <a href="http://www.solucionesdata.net/" target="_blank" rel="nofollow">www.solucionesdata.net</a></div>
+        <div class="fleft">&copy; 2013 FUNDACION SAN CLEMENTE - Todos los derechos reservados.</div>
+        <div class="fright">Seguinos en</div>
+        <br />
+        <div class="fleft">Avda. Los Pescadores c/ Brasilia - Mariano R. Alonso</div>
+        <div class="fright"><a href="#" title="Facebook" target="_blank"><img src="images/facebook.png" alt=""/></a>&nbsp<a href="#" title="Twitter" target="_blank"><img src="images/twitter.png" alt=""/></a></div>
+        <br />
+        <div class="fleft">Tel.: +595 21 760 353 // Correo: <a href="mailto:info@fundacionsanclemente.org">info@fundacionsanclemente.org</a></div>
       </div>
     </div>
   </footer>
-  <script type="text/javascript"> Cufon.now(); </script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.calendario.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript"> 
+      $(function() {
+      
+        var transEndEventNames = {
+            'WebkitTransition' : 'webkitTransitionEnd',
+            'MozTransition' : 'transitionend',
+            'OTransition' : 'oTransitionEnd',
+            'msTransition' : 'MSTransitionEnd',
+            'transition' : 'transitionend'
+          },
+          transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+          $wrapper = $( '#custom-inner' ),
+          $calendar = $( '#calendar' ),
+          cal = $calendar.calendario( {
+            onDayClick : function( $el, $contentEl, dateProperties ) {
+
+              if( $contentEl.length > 0 ) {
+                showEvents( $contentEl, dateProperties );
+              }
+
+            },
+            caldata : codropsEvents,
+            displayWeekAbbr : true
+          } ),
+          $month = $( '#custom-month' ).html( cal.getMonthName() ),
+          $year = $( '#custom-year' ).html( cal.getYear() );
+
+        $( '#custom-next' ).on( 'click', function() {
+          cal.gotoNextMonth( updateMonthYear );
+        } );
+        $( '#custom-prev' ).on( 'click', function() {
+          cal.gotoPreviousMonth( updateMonthYear );
+        } );
+
+        function updateMonthYear() {        
+          $month.html( cal.getMonthName() );
+          $year.html( cal.getYear() );
+        }
+
+        // just an example..
+        function showEvents( $contentEl, dateProperties ) {
+
+          hideEvents();
+          
+          var $events = $( '<div id="custom-content-reveal" class="custom-content-reveal"><h4>Events for ' + dateProperties.monthname + ' ' + dateProperties.day + ', ' + dateProperties.year + '</h4></div>' ),
+            $close = $( '<span class="custom-content-close"></span>' ).on( 'click', hideEvents );
+
+          $events.append( $contentEl.html() , $close ).insertAfter( $wrapper );
+          
+          setTimeout( function() {
+            $events.css( 'top', '0%' );
+          }, 25 );
+
+        }
+        function hideEvents() {
+
+          var $events = $( '#custom-content-reveal' );
+          if( $events.length > 0 ) {
+            
+            $events.css( 'top', '100%' );
+            Modernizr.csstransitions ? $events.on( transEndEventName, function() { $( this ).remove(); } ) : $events.remove();
+
+          }
+
+        }
+      
+      });
+    </script>
 </body>
 </html>
